@@ -36,7 +36,7 @@ module.exports = {
   plugins: [
     new webpack.BannerPlugin(require('./utils/licenseGenerator')),
     new MiniCssExtractPlugin({
-      filename: '[name].build.css'
+      filename: '[name].min.css'
     })
   ],
   optimization: {
