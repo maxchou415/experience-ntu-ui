@@ -1,0 +1,74 @@
+@design-tokens url('../tokens.json') format('style-dictionary3');
+
+.btn {
+  &.btn-filled {
+    &.btn-default {
+      color: design-token('color.gray.0');
+      background-color: design-token('color.fu.500');
+
+      &:hover {
+        background-color: design-token('color.fu.600');
+      }
+      &:active {
+        background-color: design-token('color.fu.700');
+      }
+      &:disabled {
+        color: design-token('color.gray.0');
+        background-color: design-token('color.gray.100');
+      }
+    }
+  }
+
+  &.btn-outline {
+    &.btn-default {
+      color: design-token('color.fu.500');
+      background-color: design-token('color.gray.0');
+      border: 1px solid design-token('color.fu.300');
+
+      &:hover {
+        color: design-token('color.fu.500');
+        border: 1px solid design-token('color.fu.500');
+      }
+      &:active {
+        color: design-token('color.fu.600');
+        background-color: design-token('color.fu.100');
+        border: 1px solid design-token('color.fu.500');
+      }
+      &:disabled {
+        color: design-token('color.gray.200');
+        border: 1px solid design-token('color.gray.300');
+      }
+    }
+  }
+
+  &.btn-bezeled {
+    &.btn-default {
+      color: design-token('color.fu.500');
+      background-color: design-token('color.fu.100');
+
+      &:hover {
+        color: design-token('color.fu.600');
+        background-color: design-token('color.fu.200');
+      }
+      &:active {
+        color: design-token('color.fu.100');
+        background-color: design-token('color.fu.400');
+      }
+      &:disabled {
+        color: design-token('color.gray.200');
+        background-color: design-token('color.gray.50');
+      }
+    }
+  }
+
+  &.btn-sm {
+    padding: design-token('spacing.8') design-token('spacing.16');
+    font-size: design-token('fontsize.14');
+    border-radius: design-token('radius.16');
+  }
+  &.btn-lg {
+    padding: design-token('spacing.18') design-token('spacing.32');
+    font-size: design-token('fontsize.16');
+    border-radius: design-token('radius.16');
+  }
+}
