@@ -1,0 +1,10 @@
+# Compiled output
+dist
+
+# Node Modules
+node_modules
+package-lock.json
+
+# VS Code files
+.vscode
+
