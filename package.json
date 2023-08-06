@@ -17,6 +17,7 @@
     "cssnano": "^6.0.1",
     "mini-css-extract-plugin": "^2.7.6",
     "postcss": "^8.4.27",
+    "postcss-css-variables": "^0.19.0",
     "postcss-each": "^1.1.0",
     "postcss-import": "^15.1.0",
     "postcss-loader": "^7.3.3",
