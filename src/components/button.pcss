@@ -1,6 +1,8 @@
 @design-tokens url('../tokens.json') format('style-dictionary3');
 
 .btn {
+  --border-width: design-token('border.2');
+
   &.btn-filled {
     &.btn-default {
       color: design-token('color.gray.0');
@@ -23,20 +25,20 @@
     &.btn-default {
       color: design-token('color.fu.500');
       background-color: design-token('color.gray.0');
-      border: 1px solid design-token('color.fu.300');
+      border: var(--border-width) solid design-token('color.fu.300');
 
       &:hover {
         color: design-token('color.fu.500');
-        border: 1px solid design-token('color.fu.500');
+        border: var(--border-width) solid design-token('color.fu.500');
       }
       &:active {
         color: design-token('color.fu.600');
         background-color: design-token('color.fu.100');
-        border: 1px solid design-token('color.fu.500');
+        border: var(--border-width) solid design-token('color.fu.500');
       }
       &:disabled {
         color: design-token('color.gray.200');
-        border: 1px solid design-token('color.gray.300');
+        border: var(--border-width) solid design-token('color.gray.300');
       }
     }
   }
