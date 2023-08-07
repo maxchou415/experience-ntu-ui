@@ -8,3 +8,5 @@ package-lock.json
 # VS Code files
 .vscode
 
+# Storybook files
+storybook-static
