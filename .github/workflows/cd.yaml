@@ -3,7 +3,7 @@ on:
   release:
     types: [published]
 jobs:
-  build:
+  build-and-publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -17,16 +17,10 @@ jobs:
       - name: Remove all .js files in dist folder
         run: find dist -name "*.js" -type f -exec rm -f {} \;
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/setup-node@v3
-        with:
-          node-version: "16.x"
-          registry-url: "https://registry.npmjs.org"
+      - name: npm clean install
+        run: npm ci
 
-      - run: npm ci
-      - run: npm publish
+      - name: Publish to npmjs
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
