@@ -1,6 +1,6 @@
 {
   "name": "@better-ntu/experience-ntu-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A better experience UI component collection for National Taiwan University.",
   "scripts": {
     "build": "webpack",
@@ -11,7 +11,23 @@
     "dist"
   ],
   "author": "Max Chou <maxchou415@gmail.com>",
-  "license": "ISC",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxchou415/experience-ntu-ui"
+  },
+  "homepage": "https://github.com/maxchou415/experience-ntu-ui#readme",
+  "keywords": [
+    "ntu",
+    "css",
+    "ui",
+    "component",
+    "台大",
+    "nationaltaiwanuniversity",
+    "臺大",
+    "國立臺灣大學",
+    "國立台灣大學"
+  ],
   "devDependencies": {
     "@csstools/postcss-design-tokens": "^3.0.1",
     "autoprefixer": "^10.4.14",
