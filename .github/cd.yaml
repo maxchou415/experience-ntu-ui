@@ -12,6 +12,9 @@ jobs:
         with:
           node-version: "16.x"
           registry-url: "https://registry.npmjs.org"
+      - run: npm run build
+      # Remove all .js files in dist folder
+      - run: find dist -name "*.js" -type f -exec rm -f {} \;
       - run: npm ci
       - run: npm publish
         env:
