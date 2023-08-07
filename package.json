@@ -7,6 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development --watch"
   },
+  "files": [
+    "dist"
+  ],
   "author": "Max Chou <maxchou415@gmail.com>",
   "license": "ISC",
   "devDependencies": {
@@ -25,9 +28,7 @@
     "stylelint": "^15.10.2",
     "stylelint-config-standard": "^34.0.0",
     "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4"
-  },
-  "dependencies": {
+    "webpack-cli": "^5.1.4",
     "postcss-nesting": "^12.0.1",
     "postcss-scss": "^4.0.6",
     "standard": "^17.1.0"
