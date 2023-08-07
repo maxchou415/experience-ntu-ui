@@ -7,17 +7,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      # Setup .npmrc file to publish to npm
       - uses: actions/setup-node@v3
         with:
           node-version: "16.x"
-          registry-url: "https://registry.npmjs.org"
       # Install dependencies
       - run: npm install
       # Build the package
       - run: npm run build
       # Remove all .js files in dist folder
       - run: find dist -name "*.js" -type f -exec rm -f {} \;
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16.x"
+          registry-url: "https://registry.npmjs.org"
+
       - run: npm ci
       - run: npm publish
         env:
