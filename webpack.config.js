@@ -41,5 +41,8 @@ module.exports = {
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]
+  },
+  resolve: {
+    preferRelative: true
   }
 }
