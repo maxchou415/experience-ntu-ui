@@ -1,6 +1,6 @@
 {
   "name": "@better-ntu/experience-ntu-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A better experience UI component collection for National Taiwan University.",
   "scripts": {
     "build": "webpack",
