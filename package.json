@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "description": "A better experience UI component collection for National Taiwan University.",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --stats-error-details",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack --mode development --watch",
     "storybook": "storybook dev -p 6006",
