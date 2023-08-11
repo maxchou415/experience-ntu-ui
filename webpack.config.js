@@ -10,6 +10,7 @@ module.exports = {
   entry: glob.sync('./src/**/*.pcss').reduce((acc, file) => {
     const entryChunkName = path.basename(file, path.extname(file))
     acc[entryChunkName] = file
+    console.log(acc)
 
     return acc
   }, {}),
@@ -41,5 +42,8 @@ module.exports = {
   ],
   optimization: {
     minimizer: [new CssMinimizerPlugin()]
+  },
+  resolve: {
+    preferRelative: true
   }
 }
