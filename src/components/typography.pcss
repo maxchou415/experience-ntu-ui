@@ -1,0 +1,31 @@
+@design-tokens url('../tokens.json') format('style-dictionary3');
+
+h1,
+h2,
+h3,
+h4,
+small {
+  color: design-token('color.gray.500');
+  font-weight: design-token('fontweight.medium');
+}
+
+h1 {
+  font-size: design-token('fontsize.36');
+}
+h2 {
+  font-size: design-token('fontsize.24');
+}
+h3 {
+  font-size: design-token('fontsize.20');
+}
+h4 {
+  font-size: design-token('fontsize.16');
+}
+
+body {
+  font-size: design-token('fontsize.14');
+  font-weight: design-token('fontweight.regular');
+}
+small {
+  font-size: design-token('fontsize.12');
+}

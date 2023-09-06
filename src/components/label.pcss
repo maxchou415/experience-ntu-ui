@@ -1,0 +1,26 @@
+@design-tokens url('../tokens.json') format('style-dictionary3');
+
+.label {
+  padding: design-token('spacing.4') design-token('spacing.12');
+  border-radius: design-token('radius.16');
+  font-size: design-token('fontsize.14');
+  letter-spacing: design-token('letterspacing.3');
+  line-height: design-token('lineheight.140');
+
+  &.label-success {
+    color: design-token('color.green.600');
+    background-color: design-token('color.green.100');
+  }
+  &.label-pending {
+    color: design-token('color.yellow.600');
+    background-color: design-token('color.yellow.100');
+  }
+  &.label-failed {
+    color: design-token('color.red.600');
+    background-color: design-token('color.red.100');
+  }
+  &.label-netural {
+    color: design-token('color.gray.500');
+    background-color: design-token('color.gray.100');
+  }
+}
