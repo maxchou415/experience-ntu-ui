@@ -8,11 +8,11 @@ function getColorProperty ({
 
   properties.forEach(p => {
     if (p.includes('text')) {
-      textColors.push(`${p}-${prefix}: { color: ${propertyValue}; }`)
+      textColors.push(`.${p}-${prefix}: { color: ${propertyValue}; }`)
     }
     if (p.includes('bg')) {
       backgroundColors.push(
-        `${p}-${prefix}: { background-color: ${propertyValue}; }`
+        `.${p}-${prefix}: { background-color: ${propertyValue}; }`
       )
     }
   })
