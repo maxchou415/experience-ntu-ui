@@ -3,7 +3,7 @@ const should = require('should')
 
 describe('variableGenerator', () => {
   it('should return a valid css', () => {
-    const variableGenerator = require('../utils/variableGenerator')
+    const variableGenerator = require('../utils/variables/variable-generator')
 
     const variables = variableGenerator({})
 
@@ -12,7 +12,7 @@ describe('variableGenerator', () => {
 
   it('should save to file', () => {
     const fs = require('fs')
-    const variableGenerator = require('../utils/variableGenerator')
+    const variableGenerator = require('../utils/variables/variable-generator')
 
     variableGenerator({ toFile: true })
 
@@ -22,7 +22,7 @@ describe('variableGenerator', () => {
 
 describe('colorVariableGenerator', () => {
   it('should return a valid css', () => {
-    const colorVariableGenerator = require('../utils/colorVariableGenerator')
+    const colorVariableGenerator = require('../utils/variables/color-variable-generator')
 
     let variables = colorVariableGenerator({
       properties: ['text', 'bg'],

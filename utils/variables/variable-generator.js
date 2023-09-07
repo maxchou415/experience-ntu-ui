@@ -1,9 +1,9 @@
-const tokens = require('../src/tokens.json')
-const writeToVariableFile = require('./writeToVariableFile')
+const tokens = require('../../src/tokens.json')
+const writeToVariableFile = require('./write-to-variable-file')
 
-const getColorProperty = require('./colorVariableGenerator')
+const getColorProperty = require('./color-variable-generator')
 
-function variableGenerator ({ toFile = false }) {
+function variableGenerator ({ toFile = process.env.SAVE_TO_FILE || false }) {
   const variables = []
 
   Object.keys(tokens).forEach(type => {
