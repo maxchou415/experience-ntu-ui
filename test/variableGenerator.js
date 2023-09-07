@@ -16,7 +16,7 @@ describe('variableGenerator', () => {
 
     variableGenerator({ toFile: true })
 
-    fs.existsSync('./src/components/variables.pcss').should.be.equal(true)
+    fs.existsSync('./src/components/_variables.pcss').should.be.equal(true)
   })
 })
 
