@@ -3,7 +3,7 @@ const writeToVariableFile = require('./write-to-variable-file')
 
 const getColorProperty = require('./color-variable-generator')
 
-function variableGenerator ({ toFile = process.env.SAVE_TO_FILE || false }) {
+function variableGenerator ({ toFile = false }) {
   const variables = []
 
   Object.keys(tokens).forEach(type => {

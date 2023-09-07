@@ -8,7 +8,7 @@
     "dev": "webpack --mode development --watch",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "generate-variables": "SAVE_TO_FILE=true node utils/variables/variable-generator.js"
+    "generate-variables": "node bin/generate-variables.js"
   },
   "files": [
     "dist"
