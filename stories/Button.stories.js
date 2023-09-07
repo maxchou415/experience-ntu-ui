@@ -15,6 +15,9 @@ export default {
     type: {
       control: { type: 'select' },
       options: ['outline', 'bezeled', 'filled']
+    },
+    diasbled: {
+      control: 'boolean'
     }
   }
 }
