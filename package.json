@@ -4,7 +4,7 @@
   "description": "A better experience UI component collection for National Taiwan University.",
   "scripts": {
     "build": "webpack --stats-error-details",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --require should --recursive --reporter spec --timeout 10000 --exit",
     "dev": "webpack --mode development --watch",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -48,6 +48,7 @@
     "css-minimizer-webpack-plugin": "^5.0.1",
     "cssnano": "^6.0.1",
     "mini-css-extract-plugin": "^2.7.6",
+    "mocha": "^10.2.0",
     "postcss": "^8.4.27",
     "postcss-css-variables": "^0.19.0",
     "postcss-each": "^1.1.0",
@@ -58,6 +59,7 @@
     "postcss-scss": "^4.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "should": "^13.2.3",
     "standard": "^17.1.0",
     "storybook": "7.2",
     "stylelint": "^15.10.2",
